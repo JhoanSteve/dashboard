@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+
+    <script src="{{asset('/adminlte/plugins/jQuery/jquery-2.2.3.min.js?v='.version()) }}"></script>
+  </head>
+  <style media="screen">
+  body{
+      font-family: 'Source Sans Pro','Helvetica Neue',Helvetica,Arial,sans-serif;
+    margin: 0px;
+    background-color: #272936;
+    font-size: 15px;
+    color: #fff;
+    /*background: #3c4452;*/
+  }
+  .navbar-navigation{
+    position: fixed;
+    width: 100%;
+    background-color:#2e3142;
+    min-height: 60px;
+    display: flex;
+    align-items: center;
+    z-index: 100;
+
+    box-shadow: 0 1px 5px 0 rgba(0,0,0,.05), 0 2px 10px 0 rgba(0,0,0,.05) !important;
+  }
+  .navbar-navigation>div.navbar-content{
+    padding: 0px 20px 0 20px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+  .navbar-items{
+    display: flex;
+    align-items: center;
+  }
+  .navbar-items>div.item{
+        margin-left: 35px;
+  }
+  .navbar-hamburger{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+
+  }
+  .user-img{
+    float: left;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    margin-right: 10px;
+    margin-top: -2px;
+  }
+  .navbar-list{
+    padding: 60px 15px 0 15px;
+    position: fixed;
+    z-index: 99;
+
+    height: 100vh;
+
+    background: #2e3142;
+    transition: 0.7s;
+  }
+  .navbar-item>div.item{
+    margin-top: 20px;
+  }
+  .navbar-item>div.item>a{
+    color:#fff;
+    text-decoration: none;
+
+  }
+  .navbar-item>div.item>a>i{
+    margin-right: 4px;
+  }
+  .navbar-item>div.item>a>span{
+    display:none;
+  }
+  .navbar-list.visible>div.navbar-item>div.item>a>span{
+    display:inline;
+    padding-right: 20px;
+  }
+  .navbar-list.visible{
+    left: 0px;
+  }
+  .section-content{
+    padding: 80px 15px 0px 65px;
+  }
+  /* box*/
+  .box-dark{
+    background: #2e3142;
+
+  }
+  .box{
+    border-radius: 2px;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,.16), 0 2px 10px 0 rgba(0,0,0,.12);
+    margin-bottom: 16px;
+  }
+  .box>div.box-header{
+    text-align: center;
+    padding: 20px 16px 20px 16px;
+    background: #393e52;
+
+    box-shadow: 0 4px 0px 0 rgba(0,0,0,.05), 0 2px 10px 0 rgba(0,0,0,.05);
+  }
+  .box>div.box-body{
+    text-align: center;
+    padding: 16px;
+  }
+  .hr-dark{
+    border-top: 1px solid #ffffff30;
+    width: 100%;
+  }
+  .message{
+    padding: 16px;
+    margin-bottom: 16px;
+    border-radius: 2px;
+    box-shadow: 0 4px 0px 0 rgba(0,0,0,.05), 0 2px 10px 0 rgba(0,0,0,.05);
+  }
+  .bg-blue{
+    background-color: #237fca;
+  }
+  /* box*/
+
+  </style>
+  <body>
+    <div class="navbar-navigation">
+      <div class="navbar-content">
+        <div class="navbar-hamburger">
+          <span class="fa fa-bars"></span>
+        </div>
+        <div class="navbar-items">
+          <div class="item">
+            <i class="fa fa-search" ></i>
+          </div>
+          <div class="item">
+            <i class="fa fa-bell-o"></i>
+          </div>
+          <div class="item" style="    display: flex;align-items: center;">
+            <img src="https://adminlte.io/themes/AdminLTE/dist/img/user2-160x160.jpg"  class="user-img">
+            <span class="fa  fa-angle-down "></span>
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+    <div class="navbar-list">
+      <div class="navbar-item">
+        <div class="item">
+            <a href="#">
+              <i class="fa  fa-home"></i>
+              <span>Inicio</span>
+            </a>
+        </div>
+        <div class="item">
+            <a href="#">
+              <i class="fa fa-th"></i>
+              <span>Widgets</span>
+            </a>
+        </div>
+        <div class="item">
+            <a href="#">
+              <i class="fa fa-files-o"></i>
+              <span>Layout Options</span>
+            </a>
+        </div>
+        <div class="item">
+            <a href="#">
+              <i class="fa fa-laptop"></i>
+              <span>UI Elements</span>
+            </a>
+        </div>
+        <div class="item">
+            <a href="#">
+              <i class="fa fa-book"></i>
+              <span>Documentation</span>
+            </a>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="section-content">
+      <div class="row">
+        <div class="col-md-12" >
+          <div class="message bg-blue">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="box box-dark">
+          <div class="box-header with-border">
+            <h3 class="box-title">Your proyects</h3>
+          </div>
+          <div class="box-body">
+            <div class="row">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+              sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+              in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+              sunt in culpa qui officia deserunt mollit anim id est laborum.
+              <hr class="hr-dark">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </div>
+
+          </div>
+        </div>
+        </div>
+        <div class="col-md-6">
+          <div class="box box-dark">
+          <div class="box-header with-border">
+            <h3 class="box-title">Your proyects</h3>
+          </div>
+          <div class="box-body">
+            <div class="row">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+              sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+              in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+              sunt in culpa qui officia deserunt mollit anim id est laborum.
+              <hr class="hr-dark">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </div>
+
+          </div>
+        </div>
+        </div>
+        <div class="col-md-6">
+          <div class="box box-dark">
+          <div class="box-header with-border">
+            <h3 class="box-title">Your proyects</h3>
+          </div>
+          <div class="box-body">
+            <div class="row">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+              sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+              in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+              sunt in culpa qui officia deserunt mollit anim id est laborum.
+              <hr class="hr-dark">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </div>
+
+          </div>
+        </div>
+        </div>
+        <div class="col-md-6">
+          <div class="box box-dark">
+          <div class="box-header with-border">
+            <h3 class="box-title">Your proyects</h3>
+          </div>
+          <div class="box-body">
+            <div class="row">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+              sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+              in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+              sunt in culpa qui officia deserunt mollit anim id est laborum.
+              <hr class="hr-dark">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </div>
+
+          </div>
+        </div>
+        </div>
+      </div>
+    </div>
+
+    <script type="text/javascript">
+    var navbarlist = $(".navbar-list");
+    $( ".navbar-hamburger" ).click(function() {
+        if(navbarlist.hasClass('visible'))
+          navbarlist.removeClass("visible");
+        else
+        navbarlist.addClass("visible");
+    });
+    </script>
+  </body>
+</html>
