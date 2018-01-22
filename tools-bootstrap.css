@@ -1,0 +1,202 @@
+body{
+    font-family: 'Source Sans Pro','Helvetica Neue',Helvetica,Arial,sans-serif;
+  margin: 0px;
+  background-color: #272936;
+  font-size: 15px;
+  color: #fff;
+  /*background: #3c4452;*/
+}
+.navbar-navigation{
+  position: fixed;
+  width: 100%;
+  background-color:#2e3142;
+  min-height: 60px;
+  display: flex;
+  align-items: center;
+  z-index: 100;
+
+  box-shadow: 0 1px 5px 0 rgba(0,0,0,.05), 0 2px 10px 0 rgba(0,0,0,.05) !important;
+  box-shadow: 0 0px 20px 0 rgba(0,0,0,0.3), 0 0px 10px 0 rgba(0,0,0,.10) !important;
+
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome and Opera */
+}
+.navbar-navigation>div.navbar-content{
+  padding: 0px 20px 0 20px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.navbar-items{
+  display: flex;
+  align-items: center;
+}
+.navbar-items>div.item{
+      margin-left: 35px;
+        position: relative;
+}
+.navbar-hamburger{
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+
+}
+.user-img>span:last-child{margin: 0px 8px 0px 8px}
+.user-img>span{margin: 0px 5px 0px 5px}
+.user-img>img{
+  float: left;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  margin-right: 10px;
+  margin-top: -2px;
+}
+.navbar-list{
+
+  position: fixed;
+  z-index: 99;
+
+  height: 100vh;
+
+  background: #2e3142;
+  transition: 0.7s;
+  box-shadow: 0 0 0 2px rgba(0,0,0,.05), 0 2px 10px 2px rgba(0,0,0,.05) !important;
+  margin-top: 60px;
+}
+.navbar-item>div.item{
+
+  padding: 20px 15px 15px 15px;
+}
+.navbar-list:hover >div>div>a>span{
+
+  display: inline;
+padding-right: 20px;
+
+}
+.navbar-item>div.item>a{
+  color:#fff;
+  text-decoration: none;
+
+}
+.navbar-item>div.item>a>i{
+  margin-right: 4px;
+}
+.navbar-item>div.item>a>span{
+  display:none;
+  padding-left: 15px;
+}
+.navbar-list.visible>div.navbar-item>div.item>a>span{
+  display:inline;
+  padding-right: 20px;
+}
+
+.navbar-list.visible{
+  left: 0px;
+}
+.section-content{
+  padding: 60px 15px 0px 65px;
+  flex: 0 0 100%;
+  max-width: 100%;
+}
+.section-nav-2{
+  background: #ffffff10;
+  width: 100%;
+  min-height: 60px;
+  margin-bottom: 15px;
+  padding-left: 30px;
+  padding-right: 30px;
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.section-nav-2>div{
+  display: flex;
+  align-items: center;
+}
+.section-nav-2>div>span{
+margin-left: 15px;
+}
+
+/* box dark*/
+.box-dark>div.panel-heading>div>a{
+  color: #fff;
+}
+.box-dark{
+  background: #2e3142;
+  box-shadow: 0 2px 5px 0 rgba(0,0,0,.16), 0 2px 10px 0 rgba(0,0,0,.12);
+}
+/* box dark*/
+/* box*/
+
+
+.box{
+  border-radius: 2px;
+
+  margin-bottom: 15px;
+}
+.box>div.box-header>h1,h2,h3{
+  font-weight: 700;
+}
+.box>div.box-header{
+  text-align: center;
+  padding: 20px 21px 20px 15px;
+  background: #ffffff10;
+
+}
+.box>div.box-body{
+  text-align: center;
+  padding: 15px;
+}
+
+/* box */
+/* well */
+.well{
+  padding: 15px;
+  box-shadow: 0 2px 5px 0 rgba(0,0,0,.16), 0 2px 10px 0 rgba(0,0,0,.12);
+  margin-bottom: 15px;
+
+}
+/* well */
+/* panel */
+.panel{
+  margin-bottom: 15px;
+}
+.panel-heading{font-weight: 900;}
+.panel-heading,.panel-body{
+  padding: 15px;
+}
+.panel-heading>div>a>i{
+  margin-left: 8px;
+}
+
+/* panel*/
+
+.hr-dark{
+  border-top: 1px solid #ffffff30;
+
+}
+.message{
+  padding: 15px;
+  margin-bottom: 15px;
+  border-radius: 2px;
+  box-shadow: 0 4px 0px 0 rgba(0,0,0,.05), 0 2px 10px 0 rgba(0,0,0,.05);
+}
+.bg-info{background: #2cabe3 !important;}
+.bg-primary{background: #237fca !important;}
+.bg-green{background: #17a9a8 !important;}
+.bg-success{background: #17a9a8  !important;}
+.bg-warning{background: #ffc36d !important;}
+.bg-danger{background: #ff7676 !important;}
+.bg-dark{background: #4c5667 !important;}
+.text-blue{color: #237fca;}
+.text-green{color: #17a9a8;}
+.text-red{color: red;}
+.text-yellow{color: yellow;}
+/* box*/
+.hidden{display: block;  }
