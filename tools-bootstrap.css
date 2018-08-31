@@ -102,6 +102,9 @@ padding-right: 20px;
   padding: 60px 15px 0px 65px;
   flex: 0 0 100%;
   max-width: 100%;
+      height: calc(100vh);
+    overflow-y: scroll; 
+
 }
 .section-nav-2{
   background: #ffffff10;

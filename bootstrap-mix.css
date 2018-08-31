@@ -1,0 +1,198 @@
+html,body{
+	margin: 0;
+	height: 100%;
+    font-weight: 100;
+}
+
+.img-c{
+	background-image: url('./dashboard/activity-dashboard-big.png');
+	position: absolute;
+	width: 100%;
+	overflow: hidden;
+    height: 100vh;
+
+
+}
+
+.navbar-mix{
+ 	display: grid;
+ 	grid-template: minmax(auto,100vh) / 60px 1fr;
+    height: 100%;
+}   
+
+.navbar-mix>.navbar-top{
+	z-index: 10;
+background: -prefix-linear-gradient(top, blue, white); 
+background: linear-gradient(#148fdc, #07c3c2);
+color: white;
+}
+.navbar-mix>.content{
+	z-index: 10;
+	padding-left: 15px;
+	padding-right: 15px;
+    height: 100%;
+}
+
+.box{
+ 	position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background: #f7f7f9;
+    background-clip: border-box;
+}
+.nav-link {
+    color: inherit;
+    padding: 1.2rem 1rem;
+    font-size: 110%;
+}
+.nav-link.logo{
+        background: #35a0e1;
+}
+.box-header {
+    padding: .75rem 1.25rem;
+    margin-bottom: 0;
+   
+}
+.box-body {
+    -webkit-box-flex: 1;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    padding: 1.25rem;
+}
+.box-border{
+        /*box-shadow: 0 2px 5px 0 rgba(0,0,0,.16), 0 2px 10px 0 rgba(0,0,0,.12);*/
+           border: 1px solid rgba(12, 175, 204, 0.04);
+}
+
+.btn-round{
+    border-radius: 25px;
+    padding: .375rem 1rem;
+}
+.dropdown-select{
+    color: inherit;
+    text-align: left!important;
+   
+
+}
+.dropdown-select::after{
+    right: 15px;
+    position: absolute;
+    top: 20px;
+}
+.dropdown-divider{
+    border-top: 1px solid rgba(0,0,0,.15);
+}
+
+/* blue*/
+
+body.skin-blue .box{
+        background-color: #233440;
+}
+body.skin-blue .box-header{
+    border-bottom: 1px solid #394a5438;
+}
+
+
+/* btn */
+.btn-remove-class{
+    background: inherit !important;
+    border: inherit !important;
+}
+.btn-secondary:not(:disabled):not(.disabled).active:focus, .btn-secondary:not(:disabled):not(.disabled):active:focus, .show>.btn-secondary.dropdown-toggle:focus,.btn-secondary.focus, .btn-secondary:focus{
+    box-shadow:none !important;
+}
+
+
+body.skin-blue{
+    color: #ffffff;
+    background: #1f2f39;
+}
+body.skin-blue hr{
+    background: #394a54;
+}
+
+body.skin-blue .dropdown-menu{
+        background: #1f2f39;
+}
+body.skin-blue .dropdown-item{
+    color: white;
+}
+body.skin-blue .dropdown-item.active,body.skin-blue .dropdown-item:active,body.skin-blue .dropdown-item:focus,body.skin-blue .dropdown-item:hover{
+    text-decoration: none;
+    background-color: #007bff;
+}
+/* font */
+.display-5{font-size: 2.5rem;}
+.font-weight{font-weight: 100}
+.strong{font-weight: 500;}
+.text-blue{ color: #148fdc }
+.bg-blue{
+    background-color: #148fdc !important;
+}
+
+/* */
+.scroll {
+  width: 100%;
+  overflow: auto;
+}
+
+::-webkit-scrollbar-corner {
+  background-color: #00000014;
+  width: 0px;
+  height: 0px;
+}
+
+::-webkit-resizer {
+  border: none;
+  border-bottom-color: inherit;
+  border-right-color: inherit;
+  outline: transparent;
+  box-shadow: none;
+}
+
+.select2-results__options::-webkit-scrollbar, .scroll-1::-webkit-scrollbar {
+  width: 7px;
+  height: 7PX;
+  background-color: #00000014;
+}
+.select2-results__options.lg::-webkit-scrollbar, .scroll-1.lg::-webkit-scrollbar {
+  width: 15px;
+  height: 15PX;
+}
+
+.select2-results__options::-webkit-scrollbar-thumb, .scroll-1::-webkit-scrollbar-thumb {
+  background-color: #00000052;
+}
+
+.select2-results__options::-webkit-scrollbar-thumb:hover, .scroll-1::-webkit-scrollbar-thumb:hover {
+  background-color: #00000052;
+}
+
+.select2-results__options::-webkit-scrollbar-thumb:active, .scroll-1::-webkit-scrollbar-thumb:active {
+  background-color: #00000052;
+}
+
+.scroll-warning::-webkit-scrollbar {
+  width: 7px;
+  height: 7PX;
+  background-color: #00000014;
+}
+
+.scroll-warning::-webkit-scrollbar-thumb {
+  background-color: #fcab29;
+}
+
+.select2-results__options.scroll-orange::-webkit-scrollbar, .scroll-1.scroll-orange::-webkit-scrollbar {
+  background-color: #fcab2930;
+}
+
+.select2-results__options.scroll-orange::-webkit-scrollbar-thumb, .scroll-1.scroll-orange::-webkit-scrollbar-thumb {
+  background-color: #fcab299e;
+}
