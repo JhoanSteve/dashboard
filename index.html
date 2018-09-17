@@ -1,0 +1,687 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+
+<!-- https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css!-->
+	<link rel="stylesheet" href="tools/bootstrap.min.css"  >
+	<!-- https://use.fontawesome.com/releases/v5.3.1/css/all.css!-->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" >
+	<link rel="stylesheet" href='./bootstrap-mix.css'/>
+	<link rel="stylesheet" href='./google-mix.css'/>
+
+<!--
+https://code.jquery.com/jquery-3.2.1.slim.min.js
+https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js
+https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js
+-->
+
+	<script src="tools/jquery-3.2.1.slim.min.js" ></script>
+	<script src="tools/popper.min.js" ></script>
+	<script src="tools/bootstrap.min.js"></script>
+
+
+
+</head>
+<body class="skin-blues">
+	<nav class="navbar navbar-expand-sm navbar-dark bg-blue  fixed-top navbar-mix">
+      <a class="navbar-brand pr-4" href="#">Bootstrap mix</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample03" aria-controls="navbarsExample03" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarsExample03">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+          </li>
+
+					<li class="nav-item dropdown open">
+							<a class="nav-link dropdown-toggle waves-effect waves-light" id="dropdown05" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+								<i class="fas fa-envelope"></i>
+								<div class="notify"> <span class="heartbit"></span> <span class="point"></span> </div>
+							</a>
+							<ul class="dropdown-menu mailbox animated bounceInDown" aria-labelledby="dropdown05">
+									<li>
+											<div class="drop-title">You have 4 new messages</div>
+									</li>
+									<li>
+											<div class="message-center text-size-min-5">
+													<a href="#" class="text-inherit">
+															<div class="user-img"> <img src="http://www.ampleadmin.wrappixel.com/ampleadmin-html/plugins/images/users/pawandeep.jpg" alt="user" class="img-circle"> <span class="profile-status online pull-right"></span> </div>
+															<div class="mail-contnet">
+																	<h5>Pavan kumar</h5> <span class="mail-desc">Just see the my admin!</span> <span class="time">9:30 AM</span> </div>
+													</a>
+													<a href="#" class="text-inherit">
+															<div class="user-img"> <img src="http://www.ampleadmin.wrappixel.com/ampleadmin-html/plugins/images/users/sonu.jpg" alt="user" class="img-circle"> <span class="profile-status busy pull-right"></span> </div>
+															<div class="mail-contnet">
+																	<h5>Sonu Nigam</h5> <span class="mail-desc">I've sung a song! See you at</span> <span class="time">9:10 AM</span> </div>
+													</a>
+													<a href="#" class="text-inherit">
+															<div class="user-img"> <img src="http://www.ampleadmin.wrappixel.com/ampleadmin-html/plugins/images/users/arijit.jpg" alt="user" class="img-circle"> <span class="profile-status away pull-right"></span> </div>
+															<div class="mail-contnet">
+																	<h5>Arijit Sinh</h5> <span class="mail-desc">I am a singer!</span> <span class="time">9:08 AM</span> </div>
+													</a>
+													<a href="#" class="text-inherit">
+															<div class="user-img"> <img src="http://www.ampleadmin.wrappixel.com/ampleadmin-html/plugins/images/users/pawandeep.jpg" alt="user" class="img-circle"> <span class="profile-status offline pull-right"></span> </div>
+															<div class="mail-contnet">
+																	<h5>Pavan kumar</h5> <span class="mail-desc">Just see the my admin!</span> <span class="time">9:02 AM</span> </div>
+													</a>
+											</div>
+									</li>
+									<li>
+											<a class="text-center" href="javascript:void(0);"> <strong>See all notifications</strong> <i class="fa fa-angle-right"></i> </a>
+									</li>
+							</ul>
+							<!-- /.dropdown-messages -->
+					</li>
+
+					<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle waves-effect waves-light" data-toggle="dropdown" href="#">
+								<i class="fab fa-telegram"></i>
+									<div class="notify"><span class="heartbit"></span><span class="point"></span></div>
+							</a>
+							<ul class="dropdown-menu dropdown-tasks animated slideInUp">
+									<li>
+											<a href="#">
+													<div>
+															<p> <strong>Task 1</strong> <span class="pull-right text-muted">40% Complete</span> </p>
+															<div class="progress progress-striped active">
+																	<div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%"> <span class="sr-only">40% Complete (success)</span> </div>
+															</div>
+													</div>
+											</a>
+									</li>
+									<li class="divider"></li>
+									<li>
+											<a href="#">
+													<div>
+															<p> <strong>Task 2</strong> <span class="pull-right text-muted">20% Complete</span> </p>
+															<div class="progress progress-striped active">
+																	<div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 20%"> <span class="sr-only">20% Complete</span> </div>
+															</div>
+													</div>
+											</a>
+									</li>
+									<li class="divider"></li>
+									<li>
+											<a href="#">
+													<div>
+															<p> <strong>Task 3</strong> <span class="pull-right text-muted">60% Complete</span> </p>
+															<div class="progress progress-striped active">
+																	<div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%"> <span class="sr-only">60% Complete (warning)</span> </div>
+															</div>
+													</div>
+											</a>
+									</li>
+									<li class="divider"></li>
+									<li>
+											<a href="#">
+													<div>
+															<p> <strong>Task 4</strong> <span class="pull-right text-muted">80% Complete</span> </p>
+															<div class="progress progress-striped active">
+																	<div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%"> <span class="sr-only">80% Complete (danger)</span> </div>
+															</div>
+													</div>
+											</a>
+									</li>
+									<li class="divider"></li>
+									<li>
+											<a class="text-center" href="#"> <strong>See All Tasks</strong> <i class="fa fa-angle-right"></i> </a>
+									</li>
+							</ul>
+					</li>
+
+					<li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="https://example.com" id="dropdown05" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>
+            <div class="dropdown-menu" aria-labelledby="dropdown05">
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+              <a class="dropdown-item" href="#">Something else here</a>
+            </div>
+          </li>
+        </ul>
+        <form class="form-inline my-2 my-md-0">
+          <input class="form-control" type="text" placeholder="Search">
+        </form>
+      </div>
+    </nav>
+
+
+	 <div class="navbar-left-2 ">
+		 <nav class="nav flex-column  text-center">
+			 <a class="nav-link " href="#"><i class="fab fa-gitlab"></i></a>
+			 <a class="nav-link" href="#"><i class="fa  fa-home"></i></a>
+			 <a class="nav-link" href="#"><i class="fa  fa-building"></i></a>
+			 <a class="nav-link" href="#"><i class="fa  fa-laptop"></i></a>
+			 <a class="nav-link" href="#"><i class="fa  fa-book"></i></a>
+		 </nav>
+	 </div>
+
+<div class="container-fluid container-mix scroll scroll-1  container-top  ">
+
+	<div class="row bg-card pt-3 pb-3">
+		<div class="col">
+			<div class="d-inline-block mr-2 pt-2 strong">DASHBOARD 1</div>
+			<div class="float-right">
+				<ol class="breadcrumb">
+                            <li><a href="#">Dashboard</a></li>
+                            <li><a href="#">Sample Pages</a></li>
+                            <li class="active">Profile page</li>
+                        </ol>
+					<button  target="_blank" class="btn btn-danger btn-sm  mr-2">Buy Admin Now</button>
+					<button class="btn btn-primary rounded-circle btn-sm" type="button" name="button"><i class=" fas fa-cog text-white "></i></button>
+			</div>
+		</div>
+
+	</div>
+	<div class="row pt-4">
+			<div class="col-md-12">
+				<div class="card">
+					<div class="card-body">
+						<div class="row">
+							<div class="col-12 col-md-4 col-lg-3 p-3">
+								<div class="row d-flex align-items-center justify-content-center">
+									<div class="col-2 col-lg-3">
+										<span class="circle circle-md text-white bg-danger rounded-circle p-3 text-size-max-7">
+											<i class="far fa-credit-card" style="transform: translate3d(0,2px,0px);"></i>
+										</span>
+									</div>
+									<div class="col-8 col-md-6">
+										  <h4>New projects</h4>
+										    <div class="progress progress-mix">
+										      <div class="progress-bar bg-danger" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%">
+										      <span class="sr-only">40% Complete (success)</span>
+										     </div>
+										    </div>
+
+									</div>
+									<div class="col-2 col-lg-3 text-size-max-17">
+										23
+									</div>
+								</div>
+							</div>
+							<div class="col-12 col-md-4 col-lg-3 p-3">
+								<div class="row d-flex align-items-center justify-content-center">
+									<div class="col-2 col-lg-3">
+										<span class="circle circle-md text-white bg-primary rounded-circle p-3 text-size-max-7">
+											<i class="far fa-credit-card" style="transform: translate3d(0,2px,0px);"></i>
+										</span>
+									</div>
+									<div class="col-8 col-md-6">
+										  <h4>Total Earnings</h4>
+										    <div class="progress progress-mix">
+										      <div class="progress-bar bg-primary" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%">
+										      <span class="sr-only">40% Complete (success)</span>
+										     </div>
+										    </div>
+
+									</div>
+									<div class="col-2 col-lg-3 text-size-max-17">
+										70
+									</div>
+								</div>
+							</div>
+							<div class="col-12 col-md-4 col-lg-3 p-3">
+								<div class="row d-flex align-items-center justify-content-center">
+									<div class="col-2 col-lg-3">
+										<span class="circle circle-md text-white bg-success rounded-circle p-3 text-size-max-7">
+											<i class="far fa-credit-card" style="transform: translate3d(0,2px,0px);"></i>
+										</span>
+									</div>
+									<div class="col-8 col-md-6">
+										  <h4>New projects</h4>
+										    <div class="progress progress-mix">
+										      <div class="progress-bar bg-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%">
+										      <span class="sr-only">40% Complete (success)</span>
+										     </div>
+										    </div>
+
+									</div>
+									<div class="col-2 col-lg-3 text-size-max-17">
+										23
+									</div>
+								</div>
+							</div>
+							<div class="col-12 col-md-4 col-lg-3 p-3">
+								<div class="row d-flex align-items-center justify-content-center">
+									<div class="col-2 col-lg-3">
+										<span class="circle circle-md text-white bg-warning rounded-circle p-3 text-size-max-7">
+											<i class="far fa-credit-card" style="transform: translate3d(0,2px,0px);"></i>
+										</span>
+									</div>
+									<div class="col-8 col-md-6">
+										  <h4>New projects</h4>
+										    <div class="progress progress-mix">
+										      <div class="progress-bar bg-warning" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%">
+										      <span class="sr-only">40% Complete (success)</span>
+										     </div>
+										    </div>
+
+									</div>
+									<div class="col-2 col-lg-3 text-size-max-17">
+										23
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+	</div>
+
+	<div class="row pt-4">
+		<div class="col-md-4">
+			<div class="card">
+				<div class="card-header">
+					<span class="text-size-max-3">MY FILES</span>
+					<div class="float-right pt-1">
+						<button type="button" class="close close-icon" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+						</button>
+					</div>
+				</div>
+				<div class="card-body">
+					<div class="row pb-5 ">
+						<div class="col strong  text-left">
+							GBP/USD
+						</div>
+						<div class="col">
+							1.6325
+						</div>
+						<div class="col text-danger strong text-right  ">
+							-0.33%
+						</div>
+					</div>
+					<div class="row pb-5 ">
+						<div class="col strong  text-left">
+							GBP/USD
+						</div>
+						<div class="col">
+							1.6325
+						</div>
+						<div class="col text-danger strong text-right  ">
+							-0.33%
+						</div>
+					</div>
+					<div class="row pb-5 ">
+						<div class="col strong  text-left">
+							GBP/USD
+						</div>
+						<div class="col">
+							1.6325
+						</div>
+						<div class="col text-danger strong text-right  ">
+							-0.33%
+						</div>
+					</div>
+					<div class="row pb-5 ">
+						<div class="col strong  text-left">
+							GBP/USD
+						</div>
+						<div class="col">
+							1.6325
+						</div>
+						<div class="col text-danger strong text-right  ">
+							-0.33%
+						</div>
+					</div>
+					<div class="row pb-5 ">
+						<div class="col strong  text-left">
+							GBP/USD
+						</div>
+						<div class="col">
+							1.6325
+						</div>
+						<div class="col text-danger strong text-right  ">
+							-0.33%
+						</div>
+					</div>
+					<div class="row pb-3 ">
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="col-md-4">
+			<div class="card">
+				<div class="card-header">
+					<span class="text-size-max-3">MY FILES</span>
+					<div class="float-right pt-1">
+						<button type="button" class="close close-icon" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+						</button>
+					</div>
+				</div>
+				<div class="card-body">
+						<div class="row">
+							<div class="col-md-12 ">
+								<ul class="list-group list-group-flush">
+									<li class="list-group-item d-flex justify-content-between align-items-center ">
+								    Cras justo odio
+								    <span class="badge badge-primary badge-pill p-2">items 14</span>
+								  </li>
+									<li class="list-group-item d-flex justify-content-between align-items-center pt-4">
+										Cras justo odio
+										<span class="badge badge-primary badge-pill p-2">items 14</span>
+									</li>
+									<li class="list-group-item d-flex justify-content-between align-items-center pt-4">
+										Cras justo odio
+										<span class="badge badge-success badge-pill p-2">items 14</span>
+									</li>
+									<li class="list-group-item d-flex justify-content-between align-items-center pt-4">
+										Cras justo odio
+										<span class="badge badge-success badge-pill p-2">items 14</span>
+									</li>
+									<li class="list-group-item d-flex justify-content-between align-items-center pt-4">
+										Cras justo odio
+										<span class="badge badge-warning badge-pill p-2">items 14</span>
+									</li>
+									<li class="list-group-item d-flex justify-content-between align-items-center pt-4">
+										Cras justo odio
+										<span class="badge badge-warning badge-pill p-2">items 14</span>
+									</li>
+								</ul>
+							</div>
+						</div>
+				</div>
+			</div>
+		</div>
+		<div class="col-md-4">
+			<div class="card">
+				<div class="card-header">
+					<span class="text-size-max-3">MY FILES</span>
+					<div class="float-right pt-1">
+						<button type="button" class="close close-icon" aria-label="Close">
+						  <span aria-hidden="true">&times;</span>
+						</button>
+					</div>
+				</div>
+				<div class="card-body">
+						<div class="row">
+							<div class="col-md-12 ">
+								<ul class="list-group list-group-flush">
+								  <li class="list-group-item">
+										<div class="row  ">
+											<div class="col ">
+												<i	class=" far fa-folder"></i> Proyect
+											</div>
+											<div class="col">
+												Folder
+											</div>
+											<div class="col">
+													12 may 2018
+											</div>
+										</div>
+									</li>
+									<li class="list-group-item">
+										<div class="row  pt-3">
+											<div class="col ">
+												<i	class=" far fa-folder"></i> Proyect
+											</div>
+											<div class="col">
+												Folder
+											</div>
+											<div class="col">
+													12 may 2018
+											</div>
+										</div>
+									</li>
+									<li class="list-group-item">
+										<div class="row  pt-3">
+											<div class="col ">
+												<i	class=" far fa-folder"></i> Proyect
+											</div>
+											<div class="col">
+												Folder
+											</div>
+											<div class="col">
+													12 may 2018
+											</div>
+										</div>
+									</li>
+									<li class="list-group-item">
+										<div class="row  pt-3">
+											<div class="col ">
+												<i	class=" far fa-folder"></i> Proyect
+											</div>
+											<div class="col">
+												Folder
+											</div>
+											<div class="col">
+													12 may 2018
+											</div>
+										</div>
+									</li>
+									<li class="list-group-item">
+										<div class="row  pt-3">
+											<div class="col ">
+												<i	class=" far fa-folder"></i> Proyect
+											</div>
+											<div class="col">
+												Folder
+											</div>
+											<div class="col">
+													12 may 2018
+											</div>
+										</div>
+									</li>
+									<li class="list-group-item">
+										<div class="row  pt-3">
+											<div class="col ">
+												<i	class=" far fa-folder"></i> Proyect
+											</div>
+											<div class="col">
+												Folder
+											</div>
+											<div class="col">
+													12 may 2018
+											</div>
+										</div>
+									</li>
+								</ul>
+							</div>
+						</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="row pt-4">
+		<div class="col-md-3">
+			<div class="card" >
+				<img class="card-img-top" src="http://www.ampleadmin.wrappixel.com/ampleadmin-html/plugins/images/users/genu.jpg" alt="image" style="width:100%">
+				<div class="card-body">
+					<h4 class="card-title">Johna Doe</h4>
+					<p class="card-text">Some example text some example text. John Doe is an architect and engineer</p>
+					<a href="javascript:void(0)" class="btn btn-primary">See Profile</a>
+				</div>
+			</div>
+		</div>
+		<div class="col-md-3">
+			<div class="card" >
+				<img class="card-img-top" src="http://www.ampleadmin.wrappixel.com/ampleadmin-html/plugins/images/users/genu.jpg" alt="image" style="width:100%">
+				<div class="card-body">
+					<h4 class="card-title">John Doe</h4>
+					<p class="card-text">Some example text some example text. John Doe is an architect and engineer</p>
+					<a href="javascript:void(0)" class="btn btn-primary">See Profile</a>
+				</div>
+			</div>
+		</div>
+		<div class="col-md-3">
+			<div class="card" >
+				<img class="card-img-top" src="http://www.ampleadmin.wrappixel.com/ampleadmin-html/plugins/images/users/genu.jpg" alt="image" style="width:100%">
+				<div class="card-body">
+					<h4 class="card-title">John Doe</h4>
+					<p class="card-text">Some example text some example text. John Doe is an architect and engineer</p>
+					<a href="javascript:void(0)" class="btn btn-primary">See Profile</a>
+				</div>
+			</div>
+		</div>
+		<div class="col-md-3">
+			<div class="card" >
+				<img class="card-img-top" src="http://www.ampleadmin.wrappixel.com/ampleadmin-html/plugins/images/users/genu.jpg" alt="image" style="width:100%">
+				<div class="card-body">
+					<h4 class="card-title">John Doe</h4>
+					<p class="card-text">Some example text some example text. John Doe is an architect and engineer</p>
+					<a href="javascript:void(0)" class="btn btn-primary">See Profile</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="row pt-4">
+		<div class="col-md-8 ">
+			<div class="bg-card mb-4 ">
+				<div class="card-body">
+						<div class="row text-center">
+							<div class="col">
+								<img src="http://www.ampleadmin.wrappixel.com/ampleadmin-html/plugins/images/users/genu.jpg"  class="img-circle">
+							</div>
+							<div class="col-lg-4 pt-5">
+								<h3 class="">Richard Willians</h3>
+								<span>List contact 20 02 2014</span>
+							</div>
+							<div class="col-lg-3 pt-5">
+								<h3><i class="fas fa-exclamation"></i></h3>
+								<span>Team suport</span>
+							</div>
+							<div class="col-lg-3 pt-5">
+								<h3 class="text-warning">
+									<i class="fas fa-star"></i>
+									<i class="fas fa-star"></i>
+									<i class="fas fa-star"></i>
+									<i class="fas fa-star"></i>
+								</h3>
+								<span>Star contact</span>
+							</div>
+						</div>
+				</div>
+			</div>
+			<div class="bg-card mb-4 bg-blue text-white">
+				<div class="card-body">
+						<div class="row text-center">
+							<div class="col">
+								<img src="http://www.ampleadmin.wrappixel.com/ampleadmin-html/plugins/images/users/genu.jpg"  class="img-circle">
+							</div>
+							<div class="col-lg-4 pt-5">
+								<h3 class="">Richard Willians</h3>
+								<span>List contact 20 02 2014</span>
+							</div>
+							<div class="col-lg-3 pt-5">
+								<h3><i class="fas fa-exclamation"></i></h3>
+								<span>Team suport</span>
+							</div>
+							<div class="col-lg-3 pt-5">
+								<h3 class="text-warning">
+									<i class="fas fa-star"></i>
+									<i class="fas fa-star"></i>
+									<i class="fas fa-star"></i>
+									<i class="fas fa-star"></i>
+								</h3>
+								<span>Star contact</span>
+							</div>
+						</div>
+				</div>
+			</div>
+			<div class="bg-card mb-4  ">
+				<div class="card-body">
+						<div class="row text-center">
+							<div class="col">
+								<img src="http://www.ampleadmin.wrappixel.com/ampleadmin-html/plugins/images/users/genu.jpg"  class="img-circle">
+							</div>
+							<div class="col-lg-4 pt-5">
+								<h3 class="">Richard Willians</h3>
+								<span>List contact 20 02 2014</span>
+							</div>
+							<div class="col-lg-3 pt-5">
+								<h3><i class="fas fa-exclamation"></i></h3>
+								<span>Team suport</span>
+							</div>
+							<div class="col-lg-3 pt-5">
+								<h3 class="text-warn">
+									<i class="fas fa-star"></i>
+									<i class="fas fa-star"></i>
+									<i class="fas fa-star"></i>
+									<i class="fas fa-star"></i>
+								</h3>
+								<span>Star contact</span>
+							</div>
+						</div>
+				</div>
+			</div>
+		</div>
+		<div class="col-md-4">
+			<div class="bg-card mb-4  ">
+				<div class="card-body">
+						<div class="row text-center">
+							<div class="col">
+								<img src="http://www.ampleadmin.wrappixel.com/ampleadmin-html/plugins/images/users/genu.jpg"  class="img-circle">
+							</div>
+							<div class="col-lg-4 pt-5">
+								<h3 class="">Richard Willians</h3>
+								<span>List contact 20 02 2014</span>
+							</div>
+							<div class="col-lg-3 pt-5">
+								<h3><i class="fas fa-exclamation"></i></h3>
+								<span>Team suport</span>
+							</div>
+							<div class="col-lg-3 pt-5">
+								<h3 class="text-warning">
+									<i class="fas fa-star"></i>
+									<i class="fas fa-star"></i>
+									<i class="fas fa-star"></i>
+									<i class="fas fa-star"></i>
+								</h3>
+								<span>Star contact</span>
+							</div>
+						</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="col-md-12">
+			<div class="bg-card callout callout-primary mb-2 ">
+				<div class="card-body">
+						data manager
+						<div class="float-right">
+							<i class="fas fa-bars link"></i>
+						</div>
+				</div>
+			</div>
+			<div class="bg-card  callout callout-blue mb-2 ">
+				<div class="card-body">
+						data manager
+						<div class="float-right">
+							<i class="fas fa-bars link"></i>
+						</div>
+				</div>
+			</div>
+			<div class="bg-card callout callout-primary mb-4 ">
+				<div class="card-body">
+						data manager
+						<div class="float-right">
+							<i class="fas fa-bars link"></i>
+						</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+</div>
+
+
+
+	<script type="text/javascript">
+	$( document ).ready(function() {
+		$('.close-icon').on('click',function() {
+			$(this).closest('.card').hide(1500);
+		})
+	});
+
+	</script>
+</body>
+</html>
