@@ -1,0 +1,246 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="tools/bootstrap.min.css"  >
+  	<!-- https://use.fontawesome.com/releases/v5.3.1/css/all.css!-->
+  	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" >
+  	<link rel="stylesheet" href='./bootstrap-mix.css'/>
+  	<link rel="stylesheet" href='./google-mix.css'/>
+
+    <script src="tools/jquery-3.2.1.slim.min.js" ></script>
+    <script src="tools/popper.min.js" ></script>
+    <script src="tools/bootstrap.min.js"></script>
+  </head>
+  <body>
+    <style media="screen">
+
+      .navbar-mix{
+        margin-left: 0px;
+        height: 50px;
+        width: 100%;
+        overflow: initial;
+        position: relative;
+        padding: 0;
+        display: block;
+      }
+        .navbar-mix>ul>li {
+          float: left;
+          display: block;
+          height: 100%;
+        }
+        .navbar-mix>ul>li:hover{
+              background-color: rgba(0,0,0,.2);
+        }
+        .navbar-mix>ul,.navbar-mix>div{
+          float: left;
+          padding: 0;
+          display: block;
+          margin: 0;
+          list-style: none;
+          height: 100%;
+
+        }
+        .navbar-mix>ul.navbar-right{
+          float: right;
+        }
+        .navbar-mix>ul>li>a,.line-50{
+          line-height: 50px;
+        }
+        .top-left-part{
+          min-width: 150px;
+          float: left;
+          border-right: 1px solid rgba(0, 0, 0, 0.08);
+        }
+        .navbar-mix .nav-link{
+          display: block;
+          padding:0 14px;
+          color: white !important;
+          cursor: pointer;
+        }
+
+        .navbar-mix .dropdown-user{
+          right: 0;
+          left: auto;
+          width: 280px;
+        }
+        .dropdown-menu>li>a {
+            display: block;
+            padding: 10px 20px;
+            clear: both;
+            font-weight: 400;
+            line-height: 1.42857143;
+            white-space: nowrap;
+        }
+        .flipInY {
+            -webkit-backface-visibility: visible!important;
+            backface-visibility: visible!important;
+            -webkit-animation-name: flipInY;
+            animation-name: flipInY;
+        }
+        @keyframes flipInY {
+          0% {
+              -webkit-transform: perspective(400px) rotate3d(0,1,0,90deg);
+              transform: perspective(400px) rotate3d(0,1,0,90deg);
+              -webkit-animation-timing-function: ease-in;
+              animation-timing-function: ease-in;
+              opacity: 0;
+          }
+          40% {
+              -webkit-transform: perspective(400px) rotate3d(0,1,0,-20deg);
+              transform: perspective(400px) rotate3d(0,1,0,-20deg);
+              -webkit-animation-timing-function: ease-in;
+              animation-timing-function: ease-in;
+          }
+          60% {
+              -webkit-transform: perspective(400px) rotate3d(0,1,0,10deg);
+              transform: perspective(400px) rotate3d(0,1,0,10deg);
+              opacity: 1;
+          }
+          80% {
+              -webkit-transform: perspective(400px) rotate3d(0,1,0,-5deg);
+              transform: perspective(400px) rotate3d(0,1,0,-5deg);
+          }
+          100% {
+              -webkit-transform: perspective(400px);
+              transform: perspective(400px);
+          }
+        }
+    </style>
+    <section class="navbar navbar-mix bg-primary">
+      <div class="top-left-part nav-link line-50">
+          Bootstrap
+      </div>
+      <ul>
+        <li>
+          <a href="#" class="nav-link">aaa</a>
+        </li>
+        <li class="nav-item dropdown mix">
+            <a class="nav-link dropdown-toggle waves-effect waves-light" id="dropdown05" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <i class="fas fa-envelope"></i>
+              <div class="notify"> <span class="heartbit"></span> <span class="point"></span> </div>
+            </a>
+            <ul class="dropdown-menu mailbox animated bounceInDown" aria-labelledby="dropdown05">
+                <li>
+                    <div class="drop-title">You have 4 new messages</div>
+                </li>
+                <li>
+                    <div class="message-center text-min-5">
+                        <a href="#" class="text-inherit">
+                            <div class="user-img"> <img src="http://www.ampleadmin.wrappixel.com/ampleadmin-html/plugins/images/users/pawandeep.jpg" alt="user" class="img-circle"> <span class="profile-status online pull-right"></span> </div>
+                            <div class="mail-contnet">
+                                <h5>Pavan kumar</h5> <span class="mail-desc">Just see the my admin!</span> <span class="time">9:30 AM</span> </div>
+                        </a>
+                        <a href="#" class="text-inherit">
+                            <div class="user-img"> <img src="http://www.ampleadmin.wrappixel.com/ampleadmin-html/plugins/images/users/sonu.jpg" alt="user" class="img-circle"> <span class="profile-status busy pull-right"></span> </div>
+                            <div class="mail-contnet">
+                                <h5>Sonu Nigam</h5> <span class="mail-desc">I've sung a song! See you at</span> <span class="time">9:10 AM</span> </div>
+                        </a>
+                        <a href="#" class="text-inherit">
+                            <div class="user-img"> <img src="http://www.ampleadmin.wrappixel.com/ampleadmin-html/plugins/images/users/arijit.jpg" alt="user" class="img-circle"> <span class="profile-status away pull-right"></span> </div>
+                            <div class="mail-contnet">
+                                <h5>Arijit Sinh</h5> <span class="mail-desc">I am a singer!</span> <span class="time">9:08 AM</span> </div>
+                        </a>
+                        <a href="#" class="text-inherit">
+                            <div class="user-img"> <img src="http://www.ampleadmin.wrappixel.com/ampleadmin-html/plugins/images/users/pawandeep.jpg" alt="user" class="img-circle"> <span class="profile-status offline pull-right"></span> </div>
+                            <div class="mail-contnet">
+                                <h5>Pavan kumar</h5> <span class="mail-desc">Just see the my admin!</span> <span class="time">9:02 AM</span> </div>
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <a class="text-center text-inherit" href="javascript:void(0);"> <strong>See all notifications</strong> <i class="fa fa-angle-right"></i> </a>
+                </li>
+            </ul>
+            <!-- /.dropdown-messages -->
+        </li>
+        <li class="nav-item dropdown mix">
+            <a class="nav-link dropdown-toggle waves-effect waves-light" data-toggle="dropdown" href="#">
+              <i class="fab fa-telegram"></i>
+                <div class="notify"><span class="heartbit"></span><span class="point"></span></div>
+            </a>
+            <ul class="dropdown-menu dropdown-tasks animated slideInUp">
+                <li>
+                    <a href="#">
+                        <div>
+                            <p> <strong>Task 1</strong> <span class="pull-right text-muted">40% Complete</span> </p>
+                            <div class="progress progress-striped active">
+                                <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%"> <span class="sr-only">40% Complete (success)</span> </div>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li class="divider"></li>
+                <li>
+                    <a href="#">
+                        <div>
+                            <p> <strong>Task 2</strong> <span class="pull-right text-muted">20% Complete</span> </p>
+                            <div class="progress progress-striped active">
+                                <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 20%"> <span class="sr-only">20% Complete</span> </div>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li class="divider"></li>
+                <li>
+                    <a href="#">
+                        <div>
+                            <p> <strong>Task 3</strong> <span class="pull-right text-muted">60% Complete</span> </p>
+                            <div class="progress progress-striped active">
+                                <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%"> <span class="sr-only">60% Complete (warning)</span> </div>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li class="divider"></li>
+                <li>
+                    <a href="#">
+                        <div>
+                            <p> <strong>Task 4</strong> <span class="pull-right text-muted">80% Complete</span> </p>
+                            <div class="progress progress-striped active">
+                                <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%"> <span class="sr-only">80% Complete (danger)</span> </div>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li class="divider"></li>
+                <li>
+                    <a class="text-center" href="#"> <strong>See All Tasks</strong> <i class="fa fa-angle-right"></i> </a>
+                </li>
+            </ul>
+        </li>
+      </ul>
+      <ul class="navbar-right">
+        <li class="nav-link line-50">dddd</li>
+        <li class="dropdown open ">
+                          <a class="nav-link dropdown-toggle profile-pic" data-toggle="dropdown" href="#" aria-expanded="true"> <img src="http://www.ampleadmin.wrappixel.com/ampleadmin-html/plugins/images/users/varun.jpg" alt="user-img" width="36" class="img-circle mr-2"><b class="hidden-xs">Steave</b><span class="caret"></span> </a>
+                          <ul class="dropdown-menu dropdown-user animated flipInY ">
+                              <li>
+                                  <div class="dw-user-box d-flex p-3">
+                                      <div class="user-img mr-3"><img src="http://www.ampleadmin.wrappixel.com/ampleadmin-html/plugins/images/users/varun.jpg" alt="user" width="100"></div>
+                                      <div class="mail-contnet">
+                                          <h4>Steave Jobs</h4>
+                                          <p class="text-muted">varun@gmail.com</p><a href="profile.html" class="btn btn-rounded btn-danger btn-sm">View Profile</a></div>
+                                  </div>
+                              </li>
+                              <li role="separator" class="divider"></li>
+                              <li><a href="#"><i class="ti-user"></i> My Profile</a></li>
+                              <li><a href="#"><i class="ti-wallet"></i> My Balance</a></li>
+                              <li><a href="#"><i class="ti-email"></i> Inbox</a></li>
+                              <li role="separator" class="divider"></li>
+                              <li><a href="#"><i class="ti-settings"></i> Account Setting</a></li>
+                              <li role="separator" class="divider"></li>
+                              <li><a href="#"><i class="fa fa-power-off"></i> Logout</a></li>
+                          </ul>
+                          <!-- /.dropdown-user -->
+                      </li>
+      </ul>
+    </section>
+
+
+  </body>
+</html>

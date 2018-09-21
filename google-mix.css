@@ -1,9 +1,10 @@
-.group 			  { 
-  position:relative; 
-  margin-bottom:45px; 
+.material-control{
+  position:relative;
+  margin-bottom:15px;
+      margin-top: 20px;
 }
-input 				{
-  font-size:18px;
+.material-control>input{
+
   padding:10px 10px 10px 5px;
   display:block;
   width: 100%;
@@ -12,67 +13,66 @@ input 				{
   background: inherit;
   color: inherit;
 }
-input:focus 		{ outline:none; }
+.material-control>input:focus{ outline:none; }
 
 /* LABEL ======================================= */
-label 				 {
-  color:#999; 
-  font-size:18px;
+.material-control>label{
+  color:#999;
+
   font-weight:normal;
   position:absolute;
   pointer-events:none;
   left:5px;
   top:10px;
-  transition:0.2s ease all; 
-  -moz-transition:0.2s ease all; 
+  transition:0.2s ease all;
+  -moz-transition:0.2s ease all;
   -webkit-transition:0.2s ease all;
 }
 
 /* active state */
-input:focus ~ label, input:valid ~ label 		{
+.material-control>input:focus ~ label, .material-control>input:valid ~ label{
   top:-20px;
-  font-size:14px;
   /*color:#5264AE;*/
 }
 
 /* BOTTOM BARS ================================= */
-.bar 	{ position:relative; display:block; }
-.bar:before, .bar:after 	{
+.material-control>.bar 	{ position:relative; display:block; }
+.material-control>.bar:before, .material-control>.bar:after 	{
   content:'';
-  height:2px; 
+  height:2px;
   width:0;
-  bottom:1px; 
+  bottom:1px;
   position:absolute;
-  background:white; 
-  transition:0.2s ease all; 
-  -moz-transition:0.2s ease all; 
+  background:white;
+  transition:0.2s ease all;
+  -moz-transition:0.2s ease all;
   -webkit-transition:0.2s ease all;
 }
-.bar:before {
+.material-control>.bar:before {
   left:50%;
 }
-.bar:after {
-  right:50%; 
+.material-control>.bar:after {
+  right:50%;
 }
 
 /* active state */
-input:focus ~ .bar:before, input:focus ~ .bar:after {
+.material-control>input:focus ~ .bar:before, .material-control>input:focus ~ .bar:after {
   width:50%;
 }
 
 /* HIGHLIGHTER ================================== */
-.highlight {
+.material-control>.highlight {
   position:absolute;
-  height:60%; 
-  width:100px; 
-  top:25%; 
+  height:60%;
+  width:100px;
+  top:25%;
   left:0;
   pointer-events:none;
   opacity:0.5;
 }
 
 /* active state */
-input:focus ~ .highlight {
+.material-control>input:focus ~ .highlight {
   -webkit-animation:inputHighlighter 0.3s ease;
   -moz-animation:inputHighlighter 0.3s ease;
   animation:inputHighlighter 0.3s ease;
@@ -90,4 +90,15 @@ input:focus ~ .highlight {
 @keyframes inputHighlighter {
 	from { background:#5264AE; }
   to 	{ width:0; background:transparent; }
+}
+/* quitarServicio*/
+.label-warning{
+  /*background-color: inherit !important;*/
+}
+/* */
+.material-control.label-warning>input:focus ~ label, .material-control.label-warning>input:valid ~ label{color:#f39c12;}
+
+
+.material-control>.bar:before, .material-control>.bar:after {
+  background: #f39c12;
 }
