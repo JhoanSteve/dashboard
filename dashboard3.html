@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+
+<!-- https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css!-->
+	<link rel="stylesheet" href="tools/bootstrap.min.css"  >
+	<!-- https://use.fontawesome.com/releases/v5.3.1/css/all.css!-->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" >
+	<link rel="stylesheet" href='./bootstrap-mix.css'/>
+	<link rel="stylesheet" href='./google-mix.css'/>
+
+<!--
+https://code.jquery.com/jquery-3.2.1.slim.min.js
+https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js
+https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js
+-->
+
+	<script src="tools/jquery-3.2.1.slim.min.js" ></script>
+	<script src="tools/popper.min.js" ></script>
+	<script src="tools/bootstrap.min.js"></script>
+
+
+
+</head>
+<body class="skin-blue">
+	<section class="navbar navbar-expand-sm navbar-dark bg-blue  ">
+
+    <li class="nav-item dropdown mix">
+        <a class="nav-link dropdown-toggle waves-effect waves-light" id="dropdown05" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <i class="fas fa-envelope"></i>
+          <div class="notify"> <span class="heartbit"></span> <span class="point"></span> </div>
+        </a>
+        <ul class="dropdown-menu mailbox animated bounceInDown" aria-labelledby="dropdown05">
+            <li>
+                <div class="drop-title">You have 4 new messages</div>
+            </li>
+            <li>
+                <div class="message-center text-min-5">
+                    <a href="#" class="text-inherit">
+                        <div class="user-img"> <img src="http://www.ampleadmin.wrappixel.com/ampleadmin-html/plugins/images/users/pawandeep.jpg" alt="user" class="img-circle"> <span class="profile-status online pull-right"></span> </div>
+                        <div class="mail-contnet">
+                            <h5>Pavan kumar</h5> <span class="mail-desc">Just see the my admin!</span> <span class="time">9:30 AM</span> </div>
+                    </a>
+                    <a href="#" class="text-inherit">
+                        <div class="user-img"> <img src="http://www.ampleadmin.wrappixel.com/ampleadmin-html/plugins/images/users/sonu.jpg" alt="user" class="img-circle"> <span class="profile-status busy pull-right"></span> </div>
+                        <div class="mail-contnet">
+                            <h5>Sonu Nigam</h5> <span class="mail-desc">I've sung a song! See you at</span> <span class="time">9:10 AM</span> </div>
+                    </a>
+                    <a href="#" class="text-inherit">
+                        <div class="user-img"> <img src="http://www.ampleadmin.wrappixel.com/ampleadmin-html/plugins/images/users/arijit.jpg" alt="user" class="img-circle"> <span class="profile-status away pull-right"></span> </div>
+                        <div class="mail-contnet">
+                            <h5>Arijit Sinh</h5> <span class="mail-desc">I am a singer!</span> <span class="time">9:08 AM</span> </div>
+                    </a>
+                    <a href="#" class="text-inherit">
+                        <div class="user-img"> <img src="http://www.ampleadmin.wrappixel.com/ampleadmin-html/plugins/images/users/pawandeep.jpg" alt="user" class="img-circle"> <span class="profile-status offline pull-right"></span> </div>
+                        <div class="mail-contnet">
+                            <h5>Pavan kumar</h5> <span class="mail-desc">Just see the my admin!</span> <span class="time">9:02 AM</span> </div>
+                    </a>
+                </div>
+            </li>
+            <li>
+                <a class="text-center text-inherit" href="javascript:void(0);"> <strong>See all notifications</strong> <i class="fa fa-angle-right"></i> </a>
+            </li>
+        </ul>
+        <!-- /.dropdown-messages -->
+    </li>
+  </section>
+
+
+	 <section class="navbar-left-2 ">
+		 <nav class="nav flex-column  text-center">
+			 <a class="nav-link " href="#"><i class="fab fa-gitlab"></i></a>
+			 <a class="nav-link" href="#"><i class="fa  fa-home"></i></a>
+			 <a class="nav-link" href="#"><i class="fa  fa-building"></i></a>
+			 <a class="nav-link" href="#"><i class="fa  fa-laptop"></i></a>
+			 <a class="nav-link" href="#"><i class="fa  fa-book"></i></a>
+		 </nav>
+	 </section>
+
+
+	<script type="text/javascript">
+	$( document ).ready(function() {
+		$('.close-icon').on('click',function() {
+			$(this).closest('.card').hide(1500);
+		})
+	});
+
+	</script>
+</body>
+</html>
