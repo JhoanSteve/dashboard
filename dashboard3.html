@@ -21,71 +21,426 @@ https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js
 	<script src="tools/bootstrap.min.js"></script>
 
 
+<style media="screen">
+		 body{
+					 background: #edf1f5;
+		 }
+		 .rounded-circle>i{transform: translate3d(0,2px,0);}
+		 .badge-success-caribbean,.badge-purple,.badge-warning-mustard{color: white;}
+		 .bg-success-caribbean,.badge-success-caribbean{background-color: #41ccba}
+		 .bg-purple,.badge-purple{background-color: #a683eb}
+		 .bg-warning-mustard,.badge-warning-mustard{background-color: #f5c47a}
+		 .badge.mix{
+			 padding: 10px 15px;
+		 }
+		 .i-circle>.fa-circle{
+			 font-size: 3%;
+			 position: absolute;
+			 margin-top: 1%;
+		 }
+		 .nav.nav-pills.mix{
+			 padding: .5rem!important;
+			 border-radius: .25rem;
+			 margin-bottom: 1rem;
+		 }
+		 .nav.nav-pills.mix .nav-link{
+			 color: white;
+		 }
+		 .nav-pills .nav-link.active, .nav-pills .show>.nav-link{
+			 border-color: #dee2e6 #dee2e6 #fff;
+			 background-color: rgba(0,0,0,.15);
+		 }
+		 /* timeline */
+		 ul.timeline {
+		 list-style-type: none;
+			position: relative;
+		}
+		ul.timeline:before {
+		 content: ' ';
+		 background: #d4d9df;
+		 display: inline-block;
+		 position: absolute;
+		 left: 29px;
+		 width: 3px;
+		 height: 100%;
+	 }
+	 ul.timeline>li {
+		 margin: 0;
+		 padding-left: 20px;
+		 margin-bottom: 2rem;
+		 position: relative;
+	 }
 
+
+	 ul.timeline:not(.timeline-icons) .timeline-badge>i {
+		 background: white;
+	 display: inline-block;
+	 position: absolute;
+	 border-radius: 50%;
+	 border: 3px solid #22c0e8;
+	 left: -19px;
+	 width: 20px;
+	 height: 20px;
+	 z-index: 400;
+	 }
+
+
+	 ul.timeline.timeline-icons .timeline-badge>i{
+		 width: 30px;
+		 height: 30px;
+		 font-size: 15px;
+		 line-height: 30px;
+		 position: absolute;
+		 border-radius: 50%;
+		 text-align: center;
+		 left: -26px;
+		 color: white;
+	 }
+	 .timeline-badge.line{transform: translateX(-50px); }
+	 .timeline-badge.line::before{content: none; }
+	 .heartbit {
+		 position: absolute;
+			/* top: 0px; */
+			left: -26px;
+			height: 30px;
+			width: 30px;
+			z-index: 10;
+			border: 5px solid #007bff;
+			border-radius: 70px;
+			-moz-animation: heartbit 1s ease-out;
+			-moz-animation-iteration-count: infinite;
+			-o-animation: heartbit 1s ease-out;
+			-o-animation-iteration-count: infinite;
+			-webkit-animation: heartbit 1s ease-out;
+			-webkit-animation-iteration-count: infinite;
+			animation-iteration-count: infinite;
+	 }
+		@keyframes heartbit {
+			0% {
+			-webkit-transform: scale(1);
+			opacity: 0.0;
+		}
+		25% {
+				-webkit-transform: scale(1.1);
+				opacity: 0.1;
+		}
+		50% {
+				-webkit-transform: scale(1.5);
+				opacity: 0.3;
+		}
+		75% {
+				-webkit-transform: scale(1.8);
+		}
+		100% {
+				-webkit-transform: scale(1);
+				opacity: 0.0;
+		}
+		}
+</style>
 </head>
-<body class="skin-blue">
-	<section class="navbar navbar-expand-sm navbar-dark bg-blue  ">
+<body>
+	<section class="container">
+      <div class="row pt-3">
+        <div class="col-md-12">
+          <span class="badge badge-pill badge-primary mix">Primary</span>
+          <span class="badge badge-pill badge-secondary mix">Secondary</span>
+          <span class="badge badge-pill badge-success mix">Success</span>
+          <span class="badge badge-pill badge-danger mix">Danger</span>
+          <span class="badge badge-pill badge-warning mix">Warning</span>
+          <span class="badge badge-pill badge-info mix">Info</span>
+          <span class="badge badge-pill badge-light mix">Light</span>
+          <span class="badge badge-pill badge-dark mix">Dark</span>
+          <span class="badge badge-pill badge-success-caribbean mix">Caribbean</span>
+          <span class="badge badge-pill badge-purple mix">Purple</span>
+          <span class="badge badge-pill badge-warning-mustard bg-green mix">Mustard</span>
+        </div>
+      </div>
+      <div class="row pt-5">
+        <div class="col-lg-12">
+          <button type="button" name="button" class="btn btn-primary px-4"> <i class="fab fa-digital-ocean"></i> New Loan</button>
+          <button type="button" name="button" class="btn btn-light px-4"> <i class="fas fa-trash-alt"></i> Open</button>
+          <button type="button" name="button" class="btn btn-light px-4"> <i class="fas fa-trash-alt"></i> Delete</button>
+          <button type="button" name="button" class="btn btn-light px-4">Copy</button>
+          <button type="button" name="button" class="btn btn-light px-4"> <i class="fas fa-ellipsis-h"></i> </button>
+          <div class="btn-group pl-5">
+          <button type="button" class="btn  dropdown-toggle btn-light" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Actions
+          </button>
+          <div class="dropdown-menu ">
+            <a class="dropdown-item" href="#">Action</a>
+            <a class="dropdown-item" href="#">Another action</a>
+            <a class="dropdown-item" href="#">Something else here</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">Separated link</a>
+          </div>
+          <div class="input-group  mx-2">
+              <input class="form-control py-2" type="search" value="search" id="example-search-input">
+                <span class="input-group-append">
+                  <button class="btn btn-primary px-4" type="button">
+                      <i class="fa fa-search"></i>
+                  </button>
+                </span>
+          </div>
+        </div>
+        </div>
 
-    <li class="nav-item dropdown mix">
-        <a class="nav-link dropdown-toggle waves-effect waves-light" id="dropdown05" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          <i class="fas fa-envelope"></i>
-          <div class="notify"> <span class="heartbit"></span> <span class="point"></span> </div>
-        </a>
-        <ul class="dropdown-menu mailbox animated bounceInDown" aria-labelledby="dropdown05">
-            <li>
-                <div class="drop-title">You have 4 new messages</div>
+        <div class="col-lg-3 pt-5">
+          <div class="row">
+            <div class="col-md-12">
+              <button type="button" name="button" class="btn btn-primary rounded-circle"><i class="fab fa-angular"></i></button>
+              <button type="button" name="button" class="btn btn-primary"><i class="fas fa-plus"></i></button>
+              <button type="button" name="button" class="btn btn-light float-right rounded-circle"><i class="fas fa-user"></i></button>
+            </div>
+            <div class="col-md-12 mt-5 ">
+              <div class="dropdown-menu d-block position-static w-100">
+                <span class="dropdown-item-text">Dropdown item text</span>
+                <a class="dropdown-item" href="#"> <i class="fas fa-pen-square text-primary"></i> Action</a>
+                <a class="dropdown-item" href="#">Another action</a>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 pt-5">
+          <div class="row">
+            <div class="col-md-12">
+              <button type="button" name="button" class="btn btn-light  rounded-circle"><i class="fas fa-user"></i></button>
+              <button type="button" name="button" class="btn btn-light float-right rounded-circle i-circle">
+                <i class="fas fa-bell"></i>
+                <i class="fa fa-circle text-danger"></i>
+              </button>
+            </div>
+            <div class="col-md-12 mt-5 ">
+              <div class="dropdown-menu d-block position-static w-100">
+                <span class="dropdown-item-text">Dropdown item text</span>
+                <a class="dropdown-item" href="#">Action</a>
+                <a class="dropdown-item" href="#">Another action</a>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="row">
+        <div class="col-md-12  pt-4">
+            <ul class="nav nav-pills mix bg-primary" id="pills-tab" role="tablist">
+            <li class="nav-item">
+              <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">Home</a>
             </li>
-            <li>
-                <div class="message-center text-min-5">
-                    <a href="#" class="text-inherit">
-                        <div class="user-img"> <img src="http://www.ampleadmin.wrappixel.com/ampleadmin-html/plugins/images/users/pawandeep.jpg" alt="user" class="img-circle"> <span class="profile-status online pull-right"></span> </div>
-                        <div class="mail-contnet">
-                            <h5>Pavan kumar</h5> <span class="mail-desc">Just see the my admin!</span> <span class="time">9:30 AM</span> </div>
-                    </a>
-                    <a href="#" class="text-inherit">
-                        <div class="user-img"> <img src="http://www.ampleadmin.wrappixel.com/ampleadmin-html/plugins/images/users/sonu.jpg" alt="user" class="img-circle"> <span class="profile-status busy pull-right"></span> </div>
-                        <div class="mail-contnet">
-                            <h5>Sonu Nigam</h5> <span class="mail-desc">I've sung a song! See you at</span> <span class="time">9:10 AM</span> </div>
-                    </a>
-                    <a href="#" class="text-inherit">
-                        <div class="user-img"> <img src="http://www.ampleadmin.wrappixel.com/ampleadmin-html/plugins/images/users/arijit.jpg" alt="user" class="img-circle"> <span class="profile-status away pull-right"></span> </div>
-                        <div class="mail-contnet">
-                            <h5>Arijit Sinh</h5> <span class="mail-desc">I am a singer!</span> <span class="time">9:08 AM</span> </div>
-                    </a>
-                    <a href="#" class="text-inherit">
-                        <div class="user-img"> <img src="http://www.ampleadmin.wrappixel.com/ampleadmin-html/plugins/images/users/pawandeep.jpg" alt="user" class="img-circle"> <span class="profile-status offline pull-right"></span> </div>
-                        <div class="mail-contnet">
-                            <h5>Pavan kumar</h5> <span class="mail-desc">Just see the my admin!</span> <span class="time">9:02 AM</span> </div>
-                    </a>
+            <li class="nav-item">
+              <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false">Profile</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#pills-contact" role="tab" aria-controls="pills-contact" aria-selected="false">Contact</a>
+            </li>
+          </ul>
+          <div class="tab-content" id="pills-tabContent">
+            <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+              one Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </div>
+            <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+              Two Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </div>
+            <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
+              Tree Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </div>
+          </div>
+        </div>
+        <div class="col-md-12  pt-5">
+          <div class="row">
+            <div class="col-3">
+              <div class="nav flex-column nav-pills mix bg-primary" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                <a class="nav-link" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-home" role="tab" aria-controls="v-pills-home" aria-selected="false"> <i class="fab fa-firefox pr-1"></i> Home</a>
+                <a class="nav-link" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-profile" role="tab" aria-controls="v-pills-profile" aria-selected="false"><i class="fab fa-google pr-2"></i> Profile</a>
+                <a class="nav-link active show" id="v-pills-messages-tab" data-toggle="pill" href="#v-pills-messages" role="tab" aria-controls="v-pills-messages" aria-selected="true"><i class="fab fa-internet-explorer pr-1"></i> Messages</a>
+                <a class="nav-link" id="v-pills-settings-tab" data-toggle="pill" href="#v-pills-settings" role="tab" aria-controls="v-pills-settings" aria-selected="false"><i class="fab fa-chrome pr-1"></i> Settings</a>
+              </div>
+            </div>
+            <div class="col-9">
+              <div class="tab-content" id="v-pills-tabContent">
+                <div class="tab-pane fade" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
+                  <p>Cillum ad ut irure tempor velit nostrud occaecat ullamco aliqua anim Lorem sint. Veniam sint duis incididunt do esse magna mollit excepteur laborum qui. Id id reprehenderit sit est eu aliqua occaecat quis et velit excepteur laborum mollit dolore eiusmod. Ipsum dolor in occaecat commodo et voluptate minim reprehenderit mollit pariatur. Deserunt non laborum enim et cillum eu deserunt excepteur ea incididunt minim occaecat.</p>
                 </div>
-            </li>
-            <li>
-                <a class="text-center text-inherit" href="javascript:void(0);"> <strong>See all notifications</strong> <i class="fa fa-angle-right"></i> </a>
-            </li>
+                <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">
+                  <p>Culpa dolor voluptate do laboris laboris irure reprehenderit id incididunt duis pariatur mollit aute magna pariatur consectetur. Eu veniam duis non ut dolor deserunt commodo et minim in quis laboris ipsum velit id veniam. Quis ut consectetur adipisicing officia excepteur non sit. Ut et elit aliquip labore Lorem enim eu. Ullamco mollit occaecat dolore ipsum id officia mollit qui esse anim eiusmod do sint minim consectetur qui.</p>
+                </div>
+                <div class="tab-pane fade active show" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">
+                  <p>Fugiat id quis dolor culpa eiusmod anim velit excepteur proident dolor aute qui magna. Ad proident laboris ullamco esse anim Lorem Lorem veniam quis Lorem irure occaecat velit nostrud magna nulla. Velit et et proident Lorem do ea tempor officia dolor. Reprehenderit Lorem aliquip labore est magna commodo est ea veniam consectetur.</p>
+                </div>
+                <div class="tab-pane fade" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab">
+                  <p>Eu dolore ea ullamco dolore Lorem id cupidatat excepteur reprehenderit consectetur elit id dolor proident in cupidatat officia. Voluptate excepteur commodo labore nisi cillum duis aliqua do. Aliqua amet qui mollit consectetur nulla mollit velit aliqua veniam nisi id do Lorem deserunt amet. Culpa ullamco sit adipisicing labore officia magna elit nisi in aute tempor commodo eiusmod.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <ul class="timeline pt-5">
+          <li>
+            <div class="timeline-badge line ">
+              <button type="button" name="button" class="btn btn-primary text-white">Hello</button>
+              <button type="button" name="button" class="btn btn-primary text-white">Hello</button>
+              <button type="button" name="button" class="btn btn-primary text-white">Hello</button>
+            </div>
+          </li>
+          <li>
+            <div class="timeline-badge">
+             <i class=""></i></div>
+            <div class="timeline-panel">
+              <div class="timeline-heading">
+                <h4 class="timeline-title">Mussum ipsum cacilds</h4>
+                <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> 11 hours ago via Twitter</small></p>
+              </div>
+              <div class="timeline-body">
+                <p>Mussum ipsum cacilds, vidis litro abertis. Consetis adipiscings elitis. Pra lá , depois divoltis porris, paradis. Paisis, filhis, espiritis santis. Mé faiz elementum girarzis, nisi eros vermeio, in elementis mé pra quem é amistosis quis leo. Manduma pindureta quium dia nois paga. Sapien in monti palavris qui num significa nadis i pareci latim. Interessantiss quisso pudia ce receita de bolis, mais bolis eu num gostis.</p>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="timeline-badge danger">
+              <i class=""></i></div>
+            <div class="timeline-panel">
+              <div class="timeline-heading">
+                <h4 class="timeline-title">Mussum ipsum cacilds</h4>
+              </div>
+              <div class="timeline-body">
+                <p>Mussum ipsum cacilds, vidis litro abertis. Consetis adipiscings elitis. Pra lá , depois divoltis porris, paradis. Paisis, filhis, espiritis santis. Mé faiz elementum girarzis, nisi eros vermeio, in elementis mé pra quem é amistosis quis leo. Manduma pindureta quium dia nois paga. Sapien in monti palavris qui num significa nadis i pareci latim. Interessantiss quisso pudia ce receita de bolis, mais bolis eu num gostis.</p>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="timeline-badge info">
+              <i class=""></i></div>
+            <div class="timeline-panel">
+              <div class="timeline-heading">
+                <h4 class="timeline-title">Mussum ipsum cacilds</h4>
+              </div>
+              <div class="timeline-body">
+                <p>Mussum ipsum cacilds, vidis litro abertis. Consetis adipiscings elitis. Pra lá , depois divoltis porris, paradis. Paisis, filhis, espiritis santis. Mé faiz elementum girarzis, nisi eros vermeio, in elementis mé pra quem é amistosis quis leo. Manduma pindureta quium dia nois paga. Sapien in monti palavris qui num significa nadis i pareci latim. Interessantiss quisso pudia ce receita de bolis, mais bolis eu num gostis.</p>
+              </div>
+            </div>
+          </li>
+
         </ul>
-        <!-- /.dropdown-messages -->
-    </li>
-  </section>
+        <ul class="timeline timeline-icons pt-5">
+          <li>
+            <div class="timeline-badge line ">
+              <button type="button" name="button" class="btn btn-primary text-white">Hello</button>
+              <button type="button" name="button" class="btn btn-primary text-white">Hello</button>
+              <button type="button" name="button" class="btn btn-primary text-white">Hello</button>
+            </div>
+          </li>
+          <li>
+            <div class="timeline-badge">
+             <i class="fab fa-angular bg-primary"></i></div>
+            <div class="timeline-panel">
+              <div class="timeline-heading">
+                <h4 class="timeline-title">Mussum ipsum cacilds</h4>
+                <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> 11 hours ago via Twitter</small></p>
+              </div>
+              <div class="timeline-body">
+                <p>Mussum ipsum cacilds, vidis litro abertis. Consetis adipiscings elitis. Pra lá , depois divoltis porris, paradis. Paisis, filhis, espiritis santis. Mé faiz elementum girarzis, nisi eros vermeio, in elementis mé pra quem é amistosis quis leo. Manduma pindureta quium dia nois paga. Sapien in monti palavris qui num significa nadis i pareci latim. Interessantiss quisso pudia ce receita de bolis, mais bolis eu num gostis.</p>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="timeline-badge danger">
+              <i class="fab fa-angular bg-primary"></i></div>
+            <div class="timeline-panel">
+              <div class="timeline-heading">
+                <h4 class="timeline-title">Mussum ipsum cacilds</h4>
+              </div>
+              <div class="timeline-body">
+                <p>Mussum ipsum cacilds, vidis litro abertis. Consetis adipiscings elitis. Pra lá , depois divoltis porris, paradis. Paisis, filhis, espiritis santis. Mé faiz elementum girarzis, nisi eros vermeio, in elementis mé pra quem é amistosis quis leo. Manduma pindureta quium dia nois paga. Sapien in monti palavris qui num significa nadis i pareci latim. Interessantiss quisso pudia ce receita de bolis, mais bolis eu num gostis.</p>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="timeline-badge info">
+              <i class="fab fa-angular bg-primary"></i></div>
+            <div class="timeline-panel">
+              <div class="timeline-heading">
+                <h4 class="timeline-title">Mussum ipsum cacilds</h4>
+              </div>
+              <div class="timeline-body">
+                <p>Mussum ipsum cacilds, vidis litro abertis. Consetis adipiscings elitis. Pra lá , depois divoltis porris, paradis. Paisis, filhis, espiritis santis. Mé faiz elementum girarzis, nisi eros vermeio, in elementis mé pra quem é amistosis quis leo. Manduma pindureta quium dia nois paga. Sapien in monti palavris qui num significa nadis i pareci latim. Interessantiss quisso pudia ce receita de bolis, mais bolis eu num gostis.</p>
+              </div>
+            </div>
+          </li>
+        </ul>
 
+        <ul class="timeline timeline-icons pt-5">
+          <li>
+            <div class="timeline-badge line ">
+              <button type="button" name="button" class="btn btn-primary text-white">Hello</button>
+              <button type="button" name="button" class="btn btn-primary text-white">Hello</button>
+              <button type="button" name="button" class="btn btn-primary text-white">Hello</button>
+            </div>
+          </li>
+          <li>
+            <div class="timeline-badge">
+              <span class="heartbit"></span>
+             <i class="fab fa-angular bg-primary"></i></div>
+            <div class="timeline-panel">
+              <div class="card">
+                <div class="card-body">
+                  <div class="timeline-heading">
+                    <h4 class="timeline-title">Mussum ipsum cacilds</h4>
+                    <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> 11 hours ago via Twitter</small></p>
+                  </div>
+                  <div class="timeline-body">
+                    <p>Mussum ipsum cacilds, vidis litro abertis. Consetis adipiscings elitis. Pra lá , depois divoltis porris, paradis. Paisis, filhis, espiritis santis. Mé faiz elementum girarzis, nisi eros vermeio, in elementis mé pra quem é amistosis quis leo. Manduma pindureta quium dia nois paga. Sapien in monti palavris qui num significa nadis i pareci latim. Interessantiss quisso pudia ce receita de bolis, mais bolis eu num gostis.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="timeline-badge">
+              <span class="heartbit"></span>
+             <i class="fab fa-angular bg-primary"></i>
+           </div>
+            <div class="timeline-panel">
+              <div class="card">
+                <div class="card-body">
+                  <div class="timeline-heading">
+                    <h4 class="timeline-title">Mussum ipsum cacilds</h4>
+                    <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> 11 hours ago via Twitter</small></p>
+                  </div>
+                  <div class="timeline-body">
+                    <p>Mussum ipsum cacilds, vidis litro abertis. Consetis adipiscings elitis. Pra lá , depois divoltis porris, paradis. Paisis, filhis, espiritis santis. Mé faiz elementum girarzis, nisi eros vermeio, in elementis mé pra quem é amistosis quis leo. Manduma pindureta quium dia nois paga. Sapien in monti palavris qui num significa nadis i pareci latim. Interessantiss quisso pudia ce receita de bolis, mais bolis eu num gostis.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="timeline-badge">
+              <span class="heartbit"></span>
+             <i class="fab fa-angular bg-primary"></i>
+           </div>
+            <div class="timeline-panel">
+              <div class="card">
+                <div class="card-body">
+                  <div class="timeline-heading">
+                    <h4 class="timeline-title">Mussum ipsum cacilds</h4>
+                    <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> 11 hours ago via Twitter</small></p>
+                  </div>
+                  <div class="timeline-body">
+                    <p>Mussum ipsum cacilds, vidis litro abertis. Consetis adipiscings elitis. Pra lá , depois divoltis porris, paradis. Paisis, filhis, espiritis santis. Mé faiz elementum girarzis, nisi eros vermeio, in elementis mé pra quem é amistosis quis leo. Manduma pindureta quium dia nois paga. Sapien in monti palavris qui num significa nadis i pareci latim. Interessantiss quisso pudia ce receita de bolis, mais bolis eu num gostis.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
 
-	 <section class="navbar-left-2 ">
-		 <nav class="nav flex-column  text-center">
-			 <a class="nav-link " href="#"><i class="fab fa-gitlab"></i></a>
-			 <a class="nav-link" href="#"><i class="fa  fa-home"></i></a>
-			 <a class="nav-link" href="#"><i class="fa  fa-building"></i></a>
-			 <a class="nav-link" href="#"><i class="fa  fa-laptop"></i></a>
-			 <a class="nav-link" href="#"><i class="fa  fa-book"></i></a>
-		 </nav>
-	 </section>
+    </section>
 
-
-	<script type="text/javascript">
-	$( document ).ready(function() {
-		$('.close-icon').on('click',function() {
-			$(this).closest('.card').hide(1500);
-		})
-	});
-
-	</script>
 </body>
 </html>

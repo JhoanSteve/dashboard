@@ -10,108 +10,15 @@
   	<!-- https://use.fontawesome.com/releases/v5.3.1/css/all.css!-->
   	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" >
   	<link rel="stylesheet" href='./bootstrap-mix.css'/>
+    <link rel="stylesheet" href='./bootstrap-mix-skin-dark.css'/>
   	<link rel="stylesheet" href='./google-mix.css'/>
 
     <script src="tools/jquery-3.2.1.slim.min.js" ></script>
     <script src="tools/popper.min.js" ></script>
     <script src="tools/bootstrap.min.js"></script>
   </head>
-  <body>
-    <style media="screen">
-
-      .navbar-mix{
-        margin-left: 0px;
-        height: 50px;
-        width: 100%;
-        overflow: initial;
-        position: relative;
-        padding: 0;
-        display: block;
-      }
-        .navbar-mix>ul>li {
-          float: left;
-          display: block;
-          height: 100%;
-        }
-        .navbar-mix>ul>li:hover{
-              background-color: rgba(0,0,0,.2);
-        }
-        .navbar-mix>ul,.navbar-mix>div{
-          float: left;
-          padding: 0;
-          display: block;
-          margin: 0;
-          list-style: none;
-          height: 100%;
-
-        }
-        .navbar-mix>ul.navbar-right{
-          float: right;
-        }
-        .navbar-mix>ul>li>a,.line-50{
-          line-height: 50px;
-        }
-        .top-left-part{
-          min-width: 150px;
-          float: left;
-          border-right: 1px solid rgba(0, 0, 0, 0.08);
-        }
-        .navbar-mix .nav-link{
-          display: block;
-          padding:0 14px;
-          color: white !important;
-          cursor: pointer;
-        }
-
-        .navbar-mix .dropdown-user{
-          right: 0;
-          left: auto;
-          width: 280px;
-        }
-        .dropdown-menu>li>a {
-            display: block;
-            padding: 10px 20px;
-            clear: both;
-            font-weight: 400;
-            line-height: 1.42857143;
-            white-space: nowrap;
-        }
-        .flipInY {
-            -webkit-backface-visibility: visible!important;
-            backface-visibility: visible!important;
-            -webkit-animation-name: flipInY;
-            animation-name: flipInY;
-        }
-        @keyframes flipInY {
-          0% {
-              -webkit-transform: perspective(400px) rotate3d(0,1,0,90deg);
-              transform: perspective(400px) rotate3d(0,1,0,90deg);
-              -webkit-animation-timing-function: ease-in;
-              animation-timing-function: ease-in;
-              opacity: 0;
-          }
-          40% {
-              -webkit-transform: perspective(400px) rotate3d(0,1,0,-20deg);
-              transform: perspective(400px) rotate3d(0,1,0,-20deg);
-              -webkit-animation-timing-function: ease-in;
-              animation-timing-function: ease-in;
-          }
-          60% {
-              -webkit-transform: perspective(400px) rotate3d(0,1,0,10deg);
-              transform: perspective(400px) rotate3d(0,1,0,10deg);
-              opacity: 1;
-          }
-          80% {
-              -webkit-transform: perspective(400px) rotate3d(0,1,0,-5deg);
-              transform: perspective(400px) rotate3d(0,1,0,-5deg);
-          }
-          100% {
-              -webkit-transform: perspective(400px);
-              transform: perspective(400px);
-          }
-        }
-    </style>
-    <section class="navbar navbar-mix bg-primary">
+  <body class="skin skin-dark">
+    <section class="navbar navbar-mix navbar-top bg-primary bg-auto">
       <div class="top-left-part nav-link line-50">
           Bootstrap
       </div>
@@ -217,30 +124,73 @@
       <ul class="navbar-right">
         <li class="nav-link line-50">dddd</li>
         <li class="dropdown open ">
-                          <a class="nav-link dropdown-toggle profile-pic" data-toggle="dropdown" href="#" aria-expanded="true"> <img src="http://www.ampleadmin.wrappixel.com/ampleadmin-html/plugins/images/users/varun.jpg" alt="user-img" width="36" class="img-circle mr-2"><b class="hidden-xs">Steave</b><span class="caret"></span> </a>
+                          <a class="nav-link dropdown-toggle profile-pic" data-toggle="dropdown" href="#" aria-expanded="true"> <img src="http://www.ampleadmin.wrappixel.com/ampleadmin-html/plugins/images/users/varun.jpg" alt="user-img" width="36" class="img-circle mr-2"><b class="hidden-xs">Steve</b><span class="caret"></span> </a>
                           <ul class="dropdown-menu dropdown-user animated flipInY ">
                               <li>
                                   <div class="dw-user-box d-flex p-3">
                                       <div class="user-img mr-3"><img src="http://www.ampleadmin.wrappixel.com/ampleadmin-html/plugins/images/users/varun.jpg" alt="user" width="100"></div>
                                       <div class="mail-contnet">
-                                          <h4>Steave Jobs</h4>
-                                          <p class="text-muted">varun@gmail.com</p><a href="profile.html" class="btn btn-rounded btn-danger btn-sm">View Profile</a></div>
+                                          <h4>Steve Jhoan</h4>
+                                          <p class="text-muted">varun@gmail.com</p><a href="profile.html" class="btn btn-rounded btn-danger btn-sm btn-round">View Profile</a></div>
                                   </div>
                               </li>
                               <li role="separator" class="divider"></li>
-                              <li><a href="#"><i class="ti-user"></i> My Profile</a></li>
-                              <li><a href="#"><i class="ti-wallet"></i> My Balance</a></li>
-                              <li><a href="#"><i class="ti-email"></i> Inbox</a></li>
+                              <li><a href="#" class="text-inherit"><i class="ti-user"></i> My Profile</a></li>
+                              <li><a href="#" class="text-inherit"><i class="ti-wallet"></i> My Balance</a></li>
+                              <li><a href="#" class="text-inherit"><i class="ti-email"></i> Inbox</a></li>
                               <li role="separator" class="divider"></li>
-                              <li><a href="#"><i class="ti-settings"></i> Account Setting</a></li>
+                              <li><a href="#" class="text-inherit"><i class="ti-settings"></i> Account Setting</a></li>
                               <li role="separator" class="divider"></li>
-                              <li><a href="#"><i class="fa fa-power-off"></i> Logout</a></li>
+                              <li><a href="#" class="text-inherit"><i class="fa fa-power-off"></i> Logout</a></li>
                           </ul>
                           <!-- /.dropdown-user -->
                       </li>
       </ul>
     </section>
+    <section class="navbar-vertical bg-auto">
+          <div class="hamburger">
 
+          </div>
+          <ul>
+            <li>
+              <a href="index.html" class="menu-bars">
+                <i class="fas fa-bars icon" ></i>
+                <span class="hide-menu"> Navigation
+                </span>
+              </a>
+            </li>
+            <li>
+              <a href="index.html" class=" active">
+                <i class="fab fa-github icon" ></i>
+                <span class="hide-menu"> Dashboard
+                </span>
+              </a>
+            </li>
+            <li>
+              <a href="index.html">
+                <i class="fab fa-github icon" ></i>
+                <span class="hide-menu"> Dashboard
+                  <span class="arrow fas fa-angle-right"></span>
+                </span>
+              </a>
+            </li>
+            <li>
+              <a href="index.html">
+                <i class="fas fa-tachometer-alt icon" ></i>
+                <span class="hide-menu"> Dashboard
+                  <span class="arrow fas fa-angle-right"></span>
 
+                </span>
+              </a>
+            </li>
+          </ul>
+        </section>
+    <section class="container-fluid container-mix scroll scroll-1  container-top">
+        <div class="row">
+          <div class="col-md-12 pt-4">
+            DFF
+          </div>
+        </div>
+    </section>
   </body>
 </html>

@@ -1,0 +1,21 @@
+body.skin-dark .navbar-mix.bg-auto{
+  background-color: #1d1e20 !important;
+}
+body.skin-dark .navbar-vertical.bg-auto{
+  background-color: #191a1b !important;
+}
+body.skin-dark .card,body.skin-dark .bg-card {
+        background-color: #222326;
+}
+body.skin-dark{
+    color: #ffffff;
+    background: #292a2d;
+}
+body.skin-dark .dropdown-menu{
+  background: #222326;
+}
+
+body.skin-dark .dropdown-item.active,body.skin-dark .dropdown-item:active,body.skin-dark .dropdown-item:focus,body.skin-dark .dropdown-item:hover{
+    text-decoration: none;
+    background-color: #007bff;
+}
