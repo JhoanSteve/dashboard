@@ -19,3 +19,6 @@ body.skin-dark .dropdown-item.active,body.skin-dark .dropdown-item:active,body.s
     text-decoration: none;
     background-color: #007bff;
 }
+body.skin-dark .progress{
+  background-color: #1c1d1f;
+}
